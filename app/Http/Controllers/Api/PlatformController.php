@@ -65,7 +65,7 @@ class PlatformController extends Controller
                 'is_active' => $updatedPlatform->pivot->is_active
             ], $message);
         } catch (\Exception $e) {
-            return $this->error('Failed to update platform status', 500);
+            return $this->error('Failed to update', 500);
         }
     }
 }
